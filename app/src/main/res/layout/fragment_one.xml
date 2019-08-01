@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="info.androidhive.materialtabs.fragments.OneFragment">
+    <EditText
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:id="@+id/txtAngka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka1" />
+
+
+    <EditText
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:id="@+id/txtAngka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka2" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="hasil"/>
+
+    <LinearLayout
+        android:layout_marginTop="56dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/btnPenjumlahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnPengurangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnPerkalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/btnPembagian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%" />
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
