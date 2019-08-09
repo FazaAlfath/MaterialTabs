@@ -23,9 +23,9 @@ public class IconTextTabsActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private int[] tabIcons = {
-            R.drawable.ic_tab_favourite,
-            R.drawable.ic_tab_call,
-            R.drawable.ic_tab_contacts
+            R.drawable.ic_calc,
+            R.drawable.ic_bangundatar,
+            R.drawable.ic_bangunruang,
     };
 
     @Override
@@ -33,9 +33,6 @@ public class IconTextTabsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_icon_text_tabs);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -53,9 +50,9 @@ public class IconTextTabsActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new OneFragment(), "ONE");
-        adapter.addFrag(new TwoFragment(), "TWO");
-        adapter.addFrag(new ThreeFragment(), "THREE");
+        adapter.addFrag(new OneFragment(), "Kalkulator");
+        adapter.addFrag(new TwoFragment(), "Bangun Datar");
+        adapter.addFrag(new ThreeFragment(), "Bangun Ruang");
         viewPager.setAdapter(adapter);
     }
 
